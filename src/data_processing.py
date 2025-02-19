@@ -13,6 +13,7 @@ class GiGSurveyDataProcessor:
         return self.df
     
     def clean_data(self):
+        self.df.columns = self.df.columns.str.strip()
         self.__clean_department()
         self.__clean_collab_columns()
         self.__clean_keywords_columns()
