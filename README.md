@@ -1,1 +1,8 @@
-# health_in_society_research_network
+# Health in Society Research Network
+
+## Overview
+The Health in Society Research Network project aims to facilitate research and collaboration in the field of public health and societal well-beinga the Univeristy of Vienna. This project provides visualisations that demonstrate the research of the members.
+
+## Visualisations
+- Word Cloud based on health research keywords and methods
+- Map based on collaborations of the health research network
