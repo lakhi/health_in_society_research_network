@@ -31,12 +31,12 @@ class GiGSurveyDataProcessor:
 
     def __clean_collab_columns(self):
         df_collab_fac_split = self.df['collab_faculties'].str.split('+', expand=True)
-        df_collab_fac_split.columns = ['collab_fac1', 'collab_fac2']
+        df_collab_fac_split.columns = ['collab_fac1', 'collab_fac2' , 'collab_fac3']
         df_collab_fac_split.replace(['-99', float('nan')], None, inplace=True)
         self.df = pd.concat([self.df.drop(columns=['collab_faculties']), df_collab_fac_split], axis=1)
 
         df_collab_uni_split = self.df['collab_unis'].str.split('+', expand=True)
-        df_collab_uni_split.columns = ['collab_uni1', 'collab_uni2', 'collab_uni3', 'collab_uni4']
+        df_collab_uni_split.columns = ['collab_uni1', 'collab_uni2', 'collab_uni3', 'collab_uni4', 'collab_uni5', 'collab_uni6', 'collab_uni7', 'collab_uni8', 'collab_uni9', 'collab_uni10', 'collab_uni11']
         df_collab_uni_split.replace(['-99', float('nan')], None, inplace=True)
         self.df = pd.concat([self.df.drop(columns=['collab_unis']), df_collab_uni_split], axis=1)
 
