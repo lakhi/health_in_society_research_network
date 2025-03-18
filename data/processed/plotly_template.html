@@ -1,13 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" xml:lang="en">
+
 <head>
-<meta charset="utf-8" />   <!--It is necessary to use the UTF-8 encoding with plotly graphics to get e.g. negative signs to render correctly -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <!--It is necessary to use the UTF-8 encoding with plotly graphics to get e.g. negative signs to render correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Health Research Network in Visuals</title>
 </head>
 
 <body>
-<h1>Here's a Plotly graph!</h1>
-{{ fig }}
-<p>And here's some text after the graph.</p>
+    <h1>The Health Research Network in Visuals</h1>
+    <h1>1. Word Clouds</h1>
+    <div>
+        <h2>a) Health Research Keywords</h2>
+        <img src="health_research_keywords_wc.png" alt="Word Cloud of Health Research Keywords" />
+    </div>
+    <div>
+        <h2>b) Research Methods</h2>
+        <img src="research_methods_keywords_wc.png" alt="Word Cloud of Research Methods" />
+    </div>
+
+    <h1>2. Alluvial Plots / Sankey Diagrams</h1>
+    <div>
+        <h2>a) Collaborations within Austria</h2>
+        {{fig_sankey_austria}}
+    </div>
+    <div>
+        <h2>b) Global Collaborations</h2>
+        {{fig_sankey_world}}
+    </div>
+    <div>
+        <h2>c) Research Methods</h2>
+        {{fig_sankey_rm}}
+    </div>
 </body>
+
 </html>
