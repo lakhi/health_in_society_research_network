@@ -5,4 +5,5 @@ The Health in Society Research Network project aims to facilitate research and c
 
 ## Visualisations
 - Word Cloud based on the health research keywords and methods employed by the members
-- Map based on collaborations of the health research network
+- Maps based on collaborations of the health research network
+- Alluvial Plots/Sankey diagrams on the collaborations between researchers across Austria and the world
