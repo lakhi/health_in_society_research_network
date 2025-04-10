@@ -5,13 +5,24 @@
     <meta charset="utf-8" />
     <!--It is necessary to use the UTF-8 encoding with plotly graphics to get e.g. negative signs to render correctly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Health Research Network in Visuals</title>
+    <title>network-visuals</title>
 </head>
 
 <body>
     <h1>The Health Research Network in Visuals</h1>
     <hr />
-    <h2>Collaborations of the Network</h2>
+    <div>
+        <h2>Topics</h2>
+        <img src="https://github.com/lakhi/health_in_society_research_network/blob/main/data/processed/health_research_keywords_wc_3.png?raw=true"
+            alt="Word Cloud of Health Research Keywords" style="max-width: 100%; height: auto;" />
+    </div>
+    <hr />
+    <div>
+        <h2>Methods</h2>
+        <img src="https://github.com/lakhi/health_in_society_research_network/blob/main/data/processed/research_methods_keywords_wc_3.png?raw=true"
+            alt="Word Cloud of Research Methods" style="max-width: 100%; height: auto;" />
+    </div>
+    <h2>Collaborations</h2>
     <div>
         <h3>Within Austria</h3>
         {{fig_sankey_austria}}
@@ -20,25 +31,6 @@
     <div>
         <h3>Across the World</h3>
         {{fig_sankey_world}}
-    </div>
-    <hr />
-    <div>
-        <h3>c) Research Methods</h3>
-        {{fig_sankey_rm}}
-    </div>
-
-    <hr />
-    <h2>Research Focus of the Network</h2>
-    <div>
-        <h3>Health Research Topics</h3>
-        <img src="https://github.com/lakhi/health_in_society_research_network/blob/main/data/processed/health_research_keywords_wc_2.png?raw=true"
-            alt="Word Cloud of Health Research Keywords" style="max-width: 100%; height: auto;" />
-    </div>
-    <hr />
-    <div>
-        <h3>Research Methods</h3>
-        <img src="https://github.com/lakhi/health_in_society_research_network/blob/main/data/processed/research_methods_keywords_wc_2.png?raw=true"
-            alt="Word Cloud of Research Methods" style="max-width: 100%; height: auto;" />
     </div>
 
 </body>
